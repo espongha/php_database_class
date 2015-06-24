@@ -6,6 +6,11 @@ Get new instance like this
 require 'Database.php';
 $db = new Database('MySQL');
 ```
+setting the connection configuration
+```php
+$db->driver->connect('hostname', 'database', 'username', 'password');
+```
+
 ### Basic Methods
 
 See below basic methods to call select, update, delete and query in the class.
@@ -41,6 +46,16 @@ $db_where = array(
 			)
 
 $db->driver->update('tablename', $db_column, $db_where);
+
+$db->driver->execute();
+```
+#### Delete
+```php
+$db_where = array(
+				'search_column_name' => 'search_value'
+			)
+
+$db->driver->delete('tablename', $db_where);
 
 $db->driver->execute();
 ```
