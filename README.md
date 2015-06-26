@@ -112,3 +112,34 @@ foreach($db->driver->fetch_object() as $value){
 	echo $value->column2;
 }
 ```
+
+### Other Database class methods
+
+see below other useful methods of PHP Database Class.
+
+#### Closing connection
+```php
+$db->driver->close();
+```
+#### Beginning transaction
+```php
+$db->driver->begin_trans();
+
+$db_where = array(
+				'search_column_name' => 'search_value'
+			)
+
+$db->driver->delete('tablename', $db_where);
+
+$db->driver->execute();
+
+$db->driver->commit();
+```
+#### Rollback transaction
+```php
+$db->driver->rollback();
+```
+#### Commiting transaction
+```php
+$db->driver->commit();
+```
