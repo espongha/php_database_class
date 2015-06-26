@@ -1,3 +1,8 @@
+PHP Database Class
+===
+
+A collection of class of database to call different types of database in one class
+
 ## How to use it
 
 Get new instance like this
