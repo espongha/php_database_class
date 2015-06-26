@@ -59,3 +59,56 @@ $db->driver->delete('tablename', $db_where);
 
 $db->driver->execute();
 ```
+
+### Fetching Data
+
+See below methods for different ways in fething data using php database class.
+
+#### Fetch Row
+```php
+$db_column = array(
+				'column1',
+				'column2'
+			 );
+			  
+$db->driver->select('tablename', $db_column);
+
+$db->driver->execute();
+
+foreach($db->driver->fetch_row() as $value){
+	echo $value[0];
+	echo $value[1];
+}
+```
+#### Fetch Associative
+```php
+$db_column = array(
+				'column1',
+				'column2'
+			 );
+			  
+$db->driver->select('tablename', $db_column);
+
+$db->driver->execute();
+
+foreach($db->driver->fetch_assoc() as $value){
+	echo $value['column1'];
+	echo $value['column2'];
+}
+```
+#### Fetch Object
+```php
+$db_column = array(
+				'column1',
+				'column2'
+			 );
+			  
+$db->driver->select('tablename', $db_column);
+
+$db->driver->execute();
+
+foreach($db->driver->fetch_object() as $value){
+	echo $value->column1;
+	echo $value->column2;
+}
+```
