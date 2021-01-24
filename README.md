@@ -23,17 +23,17 @@ See below basic methods to call select, update, delete and query in the class.
 #### Select
 ```php
 $db_column = array(
-				'column1',
-				'column2'
-			 );
+	'column1',
+	'column2'
+);
 			  
 $db_where = array(
-				'search_column_name' => 'search_value'
-			);
+	'search_column_name' => 'search_value'
+);
 			  
 $db_order = array(
-				'column_name_to_order' => 'desc'
-			);
+	'column_name_to_order' => 'desc'
+);
 			  
 $db->driver->select('tablename', $db_column, $db_where, $db_order);
 
@@ -42,9 +42,9 @@ $db->driver->execute();
 #### Update
 ```php
 $db_column = array(
-				'column1' => 'column1_value',
-				'column2' => 'column2_value'
-			 );
+	'column1' => 'column1_value',
+	'column2' => 'column2_value'
+);
 			 
 $db_where = array(
 				'search_column_name' => 'search_value'
@@ -57,8 +57,8 @@ $db->driver->execute();
 #### Delete
 ```php
 $db_where = array(
-				'search_column_name' => 'search_value'
-			)
+	'search_column_name' => 'search_value'
+)
 
 $db->driver->delete('tablename', $db_where);
 
@@ -72,9 +72,9 @@ See below methods for different ways in fething data using php database class.
 #### Fetch Row
 ```php
 $db_column = array(
-				'column1',
-				'column2'
-			 );
+	'column1',
+	'column2'
+);
 			  
 $db->driver->select('tablename', $db_column);
 
@@ -88,9 +88,9 @@ foreach($db->driver->fetch_row() as $value){
 #### Fetch Associative
 ```php
 $db_column = array(
-				'column1',
-				'column2'
-			 );
+	'column1',
+	'column2'
+);
 			  
 $db->driver->select('tablename', $db_column);
 
@@ -104,9 +104,9 @@ foreach($db->driver->fetch_assoc() as $value){
 #### Fetch Object
 ```php
 $db_column = array(
-				'column1',
-				'column2'
-			 );
+	'column1',
+	'column2'
+);
 			  
 $db->driver->select('tablename', $db_column);
 
@@ -131,8 +131,8 @@ $db->driver->close();
 $db->driver->begin_trans();
 
 $db_where = array(
-				'search_column_name' => 'search_value'
-			)
+	'search_column_name' => 'search_value'
+)
 
 $db->driver->delete('tablename', $db_where);
 
