@@ -1,0 +1,11 @@
+{
+    "name": "php_database_class",
+    "version": "1.0.0",
+    "description": "initial release",
+    "author": "Robert John Baldoza",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/espongha/php_database_class.git"
+    }
+  }
