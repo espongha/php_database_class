@@ -1,9 +1,9 @@
 {
-    "name":  "espongha/PHP_Database_Class",
+    "name":  "espongha/php_database_class",
     "repositories": [
       {
         "type": "vcs",
-        "url": "https://github.com/espongha/PHP_Database_Class.git"
+        "url": "https://github.com/espongha/php_database_class.git"
       }
     ]
 }
